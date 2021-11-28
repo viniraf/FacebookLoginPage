@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Zerando e configurando body */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Setando tipografia específica */
+body,
+input,
+button {
+  font-family: Helvetica, sans-serif;
+}
+
+/* Configurando e centralizando o container */
+.container {
+  padding-top: 130px;
+  padding-bottom: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.intro {
+  margin-bottom: 50px;
+}
+
+/* Ajustando tamanho da imagem */
+.logo {
+  display: block;
+  max-width: 100%;
+  height: 106px;
+  margin: -28px; /* Para tirar o espaço em branco do svg e deixar alinhado */
+}
+
+/* Ajustando texto que fica em baixo da imagem */
+h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  color: #1c1e21;
+  max-width: 500px;
+}
+
+/* Configurando fundo do formulario */
+form {
+  background: white;
+  padding: 16px 16px 24px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Deixando tudo do formulario em coluna */
+form a,
+input,
+button {
+  display: block;
+}
+
+/* Ajeitando os dois inputs do formulario */
+input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+  outline: none;
+}
+input:focus {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px #e7f3ff;
+  caret-color: #1877f2;
+}
+
+input[placeholder] {
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+input::placeholder {
+  font-size: 18px;
+  color: #1d2129;
+  opacity: 0.6;
+}
+
+/* Estilizando o "Esqueceu a senha?" */
+form a {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  color: #1877f2;
+  font-size: 14px;
+  text-decoration: none;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dadde1;
+}
+form a:hover {
+  text-decoration: underline;
+}
+
+/* Configurações gerais dos dois botões */
+.entrar,
+.criar-conta {
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
+}
+
+/* Ajeitando botão entrar */
+.entrar {
+  font-size: 20px;
+  background: #1877f2;
+  width: 100%;
+}
+.entrar:hover {
+  background: #166fe5;
+}
+
+/* Ajeitando botao criar conta */
+.criar-conta {
+  font-size: 17px;
+  background: #42b72a;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+.criar-conta:hover {
+  background: #36a420;
+}
+
+/* Estilizando texto em baixo dos botões */
+p,
+p > a {
+  color: #1c1e21;
+  font-size: 14px;
+  margin: 28px 0 0 0;
+}
+
+/* Deixando só o "Criar conta" mais escuro que o resto do texto e com sublinhado */
+p > a {
+  font-weight: bold;
+  text-decoration: none;
+}
+p > a:hover {
+  text-decoration: underline;
+}
+
+/* Estilizando footer */
+footer {
+  background: #fff;
+  font-size: 14px;
+  color: #737373;
+  margin-left: -50px;
+  margin-right: -50px;
+  text-align: center;
+  height: 219px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    margin: -28px auto;
+  }
+
+  .intro {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
