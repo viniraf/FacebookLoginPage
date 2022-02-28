@@ -3,7 +3,7 @@
 ## Informações 
 
 * Esse é um projeto feito para treinar minhas habilidades de front-end, com foco no CSS;
-* O projeto é uma pagina web para realizar login, semelhenta à do Facebook;
+* O projeto é uma página web para realizar login, semelhenta à do Facebook;
 * A página de login possui somente o design, sem a parte funcional.
 
 ## Conhecimentos utilizados 
